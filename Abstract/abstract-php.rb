@@ -457,7 +457,7 @@ INFO
           To enable PHP in Apache add the following to httpd.conf and restart Apache:
               LoadModule php7_module #{HOMEBREW_PREFIX}/opt/php#{php_version_path}/libexec/apache2/libphp7.so
 
-              <FilesMatch \.php$>
+              <FilesMatch .\\.php$>
                   SetHandler application/x-httpd-php
               </FilesMatch>
 
